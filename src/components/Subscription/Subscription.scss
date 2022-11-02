@@ -1,0 +1,68 @@
+.subscription {
+  text-align: center;
+  height: 20rem;
+  position: relative;
+  padding: 10rem 0;
+
+  &__heading {
+    font-size: 2.5rem;
+    color: #5e6282;
+    font-family: "DM Sans", sans-serif;
+    width: 50%;
+    margin: auto;
+
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+  }
+
+  &__form {
+    &__input {
+      padding: 1.5rem 0;
+      padding-left: 2.8rem;
+      width: 25%;
+      background: #fff;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+      border-radius: 1rem;
+      margin-top: 5rem;
+
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
+    }
+
+    &__button {
+      padding: 1.5rem 3rem;
+      border: none;
+      background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+      border-radius: 1rem;
+      color: #fff;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.input__container {
+  position: relative;
+}
+
+.email__icon {
+  position: absolute;
+  left: 0.5rem;
+  top: -50%;
+  font-size: 2rem;
+  color: #39425d;
+}
+
+.decorator-plus {
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+}
+
+.subscription-icon {
+  position: absolute;
+  top: 0;
+  left: 90%;
+}

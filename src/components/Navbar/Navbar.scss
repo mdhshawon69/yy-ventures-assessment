@@ -1,0 +1,89 @@
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+
+  &__logo {
+    @media screen and (max-width: 992px) {
+      width: 8rem;
+      height: auto;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
+
+    @media screen and (max-width: 992px) {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      position: absolute;
+      top: 70px;
+      left: -100%;
+      z-index: 9999;
+      background-color: #fff1da;
+      text-align: center;
+      transition: all 0.3s;
+      padding-top: 1.5rem;
+      border-top: 2px solid #fff;
+    }
+  }
+
+  &__show-mobile-nav {
+    left: 0;
+  }
+
+  &__menu-button {
+    display: none;
+    background: none;
+    outline: none;
+    font-size: 3rem;
+    border: none;
+
+    @media screen and (max-width: 992px) {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    color: #000;
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 992px) {
+      padding: 1rem 0;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 2.5rem;
+      display: block;
+    }
+  }
+
+  &__btn {
+    background: none;
+    padding: 0.7rem 2rem;
+    border: 1px solid #000;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    @media screen and (max-width: 992px) {
+      width: 50%;
+      margin: 0 auto;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__lang {
+    border: none;
+    background: none;
+  }
+}

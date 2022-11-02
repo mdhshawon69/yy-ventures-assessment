@@ -1,0 +1,78 @@
+.services {
+  padding: 5rem 0;
+  font-family: "DM Sans", sans-serif;
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 24rem;
+      height: 28rem;
+      border-radius: 5rem;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      text-align: center;
+      padding: 2rem 2rem;
+
+      @media screen and (max-width: 992px) {
+        width: 20rem;
+        height: 24rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 30rem;
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 24rem;
+        height: 28rem;
+      }
+
+      &__heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        @media screen and (max-width: 992px) {
+          font-size: 1.6rem;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 2rem;
+        }
+      }
+
+      &__paragraph {
+        font-size: 1.4rem;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 2.5rem;
+        color: #5e6282;
+        font-weight: 600;
+
+        @media screen and (max-width: 992px) {
+          width: 90%;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+.container-decorator {
+  position: absolute;
+  right: 0;
+}

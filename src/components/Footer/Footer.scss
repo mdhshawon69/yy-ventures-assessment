@@ -1,0 +1,92 @@
+.footer {
+  font-family: "DM Sans", sans-serif;
+  padding: 10rem 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__first {
+      &__text {
+        font-size: 1.4rem;
+        color: #5e6282;
+        width: 60%;
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__menu__heading {
+    font-size: 1.8rem;
+    color: #000;
+    margin-top: 0;
+
+    @media screen and (max-width: 992px) {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__menu__item {
+    font-size: 1.6rem;
+    color: #5e6282;
+    margin: 0.5rem 0;
+    display: block;
+  }
+
+  &__social {
+    @media screen and (max-width: 992px) {
+      margin-top: 2.5rem;
+    }
+
+    &__top {
+      &__item {
+        font-size: 2rem;
+        padding: 2rem 2rem;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        margin: 0 1rem;
+        color: #000;
+      }
+
+      &__item--bg {
+        background: conic-gradient(
+          from 180deg at 50% 50%,
+          #b8d2f1 0deg,
+          #f289aa 60deg,
+          #c68bf0 106.09deg,
+          #d164da 153.75deg,
+          #c963e8 221.25deg,
+          #bfc2e8 258.75deg,
+          #ffc999 288.75deg,
+          #d0d8c9 315deg,
+          #bad0f1 334.13deg,
+          #ced8cb 358.97deg,
+          rgba(255, 255, 255, 0) 360deg
+        );
+
+        color: #fff;
+      }
+    }
+
+    &__bottom {
+      &__heading {
+        font-size: 1.6rem;
+        color: #5e6282;
+        margin-bottom: 1rem;
+      }
+
+      & img {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

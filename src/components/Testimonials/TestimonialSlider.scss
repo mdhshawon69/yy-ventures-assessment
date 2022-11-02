@@ -1,0 +1,56 @@
+.swiper {
+  width: 44rem;
+  height: 52rem;
+
+  @media screen and (max-width: 768px) {
+    width: 34rem;
+    height: 44rem;
+    margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 30rem;
+    height: 44rem;
+    margin-top: 2rem;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.swiper-slide {
+  background-color: #fff !important;
+}
+
+.testimonial-card {
+  text-align: center;
+  padding: 0 2rem;
+
+  &__avater {
+    width: 10rem;
+    height: auto;
+  }
+
+  &__author {
+    text-align: left;
+
+    &__name {
+      margin-bottom: 0;
+      margin-top: 5rem;
+    }
+
+    &__country {
+      margin: 0;
+    }
+  }
+}
